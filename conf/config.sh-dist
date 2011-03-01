@@ -1,0 +1,19 @@
+export SRC_PATH=2011
+export DEST_PATH=2011
+
+export RSYNC_SRC=docs/$SRC_PATH/
+export RSYNC_DEST=a2:/www/decafbad.com/docs/$DEST_PATH/
+export RSYNC=/usr/bin/rsync
+export USERNAME=lorchard
+export SSH_AUTH_SOCK=`find /tmp/launch-*/Listeners -user $USERNAME -type s | head -1` 
+
+export S3SYNC_SRC=docs/$SRC_PATH/
+export S3SYNC_DEST=static.decafbad.com:$DEST_PATH/
+export S3SYNC=/usr/bin/s3sync
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+
+export KICKER=/usr/bin/kicker
+export GROWLNOTIFY=/usr/local/bin/growlnotify
+export GROWLTITLE=dumpcarton
+export LAUNCHD_LABEL=com.decafbad.dumpcarton

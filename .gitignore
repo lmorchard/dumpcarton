@@ -1,0 +1,8 @@
+xfers/
+tmp/
+conf/config.sh
+conf/*.plist
+logs/*.txt
+pip-log.txt
+*.swp
+*.swo
